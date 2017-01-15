@@ -17,7 +17,7 @@ Room= new Schema({
 Home = new Schema({
 	name: { type: String, required: true},
 	device_auth_code: {type: String},
-	device_status: {type: Number},
+	device_status: {type: Boolean, default: false},
 	description: {type: String},
 	administrator: {type : mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
 	
